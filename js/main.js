@@ -298,7 +298,7 @@ function fillOptionValue(capacityGuests, value, text) {
   capacityGuests.append(option);
 }
 
-function fillOptionOnCapacityGuests(selectOption, capacityGuests) {
+function fillOptionOnCapacityGuestsHandler(selectOption, capacityGuests) {
     capacityGuests.removeAttribute("disabled");
     let roomsValue = selectOption.value;
     capacityGuests.innerHTML = "";
@@ -319,5 +319,5 @@ function fillOptionOnCapacityGuests(selectOption, capacityGuests) {
     }
   }
 
-  fillOptionOnCapacityGuests(rooms.querySelector("option:checked"), capacityGuests);
+fillOptionOnCapacityGuestsHandler(rooms.querySelector("option:checked"), capacityGuests);
   disableInput(capacityGuests);
