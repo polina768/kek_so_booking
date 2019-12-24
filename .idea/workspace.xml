@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="271d81dc-8713-49b9-99e7-ade1ea47b19f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\admin\WebstormProjects\keksobooking\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UWDjZRiyPqc8KzfsIvC5KEwtfj" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="271d81dc-8713-49b9-99e7-ade1ea47b19f" name="Default Changelist" comment="" />
+      <created>1575463593691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575463593691</updated>
+      <workItem from="1575463594802" duration="53799000" />
+      <workItem from="1576488959175" duration="15672000" />
+      <workItem from="1576518792559" duration="27124000" />
+      <workItem from="1576924460013" duration="9000" />
+      <workItem from="1577092112035" duration="776000" />
+    </task>
+    <task id="LOCAL-00001" summary="create project template">
+      <created>1575463746197</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575463746197</updated>
+    </task>
+    <task id="LOCAL-00002" summary="delete travis">
+      <created>1575463851087</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575463851087</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Сделано 1 задание">
+      <created>1576052380101</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576052380101</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Внесены исправления в задание 1">
+      <created>1576056255401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576056255401</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Внесены исправления в задание 1">
+      <created>1576057840219</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576057840219</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Внесены исправления в задание 1">
+      <created>1576136873963</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576136873963</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Внесены исправления в задание 1">
+      <created>1576136969834</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576136969834</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Выполнено задание 2">
+      <created>1577092175433</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577092175433</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Выполнено задание 2">
+      <created>1577095634200</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1577095634200</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Выполнено задание 2">
+      <created>1577095677900</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1577095677900</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create project template" />
+    <MESSAGE value="delete travis" />
+    <MESSAGE value="Сделано 1 задание" />
+    <MESSAGE value="Внесены исправления в задание 1" />
+    <MESSAGE value="Выполнено задание 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнено задание 2" />
+  </component>
+</project>
