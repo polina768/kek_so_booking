@@ -20,6 +20,9 @@ const form = document.querySelector(".ad-form");
 const fildsets = document.querySelectorAll("fieldset");
 const address = document.querySelector("#address");
 
+const rooms = document.querySelector("#room_number");
+const capacityGuests = document.querySelector("#capacity");
+
 function disabledFildset(fildsets) {
   for (let i of fildsets) {
     i.setAttribute("disabled", "true");
@@ -80,34 +83,34 @@ function generateCheck(checks) {
   return randCheck;
 }
 
-function generateFeatures(features) {
-  let arrFeatures = [...features];
+function generateFeatures(featureArgs) {
+  let features = [...featureArgs];
   let newFeat = [];
-  let randLength = getRandomInt(1, arrFeatures.length) + 1;
+  let randLength = getRandomInt(1, features.length) + 1;
   while (newFeat.length !== randLength) {
-    let randIndex = getRandomInt(0, arrFeatures.length);
-    let randFeat = arrFeatures[randIndex];
-    if (newFeat.indexOf(randFeat) == -1) {
+    let randIndex = getRandomInt(0, features.length);
+    let randFeat = features[randIndex];
+    if (!newFeat.includes(randFeat)) {
       newFeat.push(randFeat);
-      arrFeatures.splice(randIndex, 1);
+      features.splice(randIndex, 1);
     }
   }
   return newFeat;
 }
 
-function generatePhotos(photos) {
-  let arrPhotos = [...photos];
-  let photoLength = arrPhotos.length;
-  let newArr = [];
-  while (newArr.length !== photoLength) {
-    let randIndex = getRandomInt(0, arrPhotos.length);
-    let randPhoto = arrPhotos[randIndex];
-    if (newArr.indexOf(randPhoto) == -1) {
-      newArr.push(randPhoto);
-      arrPhotos.splice(randIndex, 1);
+function generatePhotos(photoArgs) {
+  let photos = [...photoArgs];
+  let photoLength = photos.length;
+  let newPhotos = [];
+  while (newPhotos.length !== photoLength) {
+    let randIndex = getRandomInt(0, photos.length);
+    let randPhoto = photos[randIndex];
+    if (!newPhotos.includes(randPhoto)) {
+      newPhotos.push(randPhoto);
+      photos.splice(randIndex, 1);
     }
   }
-  return newArr;
+  return newPhotos;
 }
 
 function createOffer(location) {
@@ -154,11 +157,11 @@ function generateTemplates() {
   return templates;
 }
 
-function createPin(arr) {
-  let template = document.querySelector("#pin").content.querySelector("button");
-  for (let i = 0; i < arr.length; i++) {
+function createPin(templates) {
+  const template = document.querySelector("#pin").content.querySelector("button");
+  for (let item of templates) {
     let pin = template.cloneNode(true);
-    let pinObj = arr[i];
+    let pinObj = item;
     pin.style.left = `${pinObj.location.x}px`;
     pin.style.top = `${pinObj.location.y}px`;
     pin.firstChild.src = `${pinObj.author.avatars}`;
@@ -182,9 +185,9 @@ function getTypeHouse(str) {
 
 function createPhotos(photoContainer, images) {
   photoContainer.innerHTML = "";
-  for (let i = 0; i < images.length; i++) {
+  for (let item of images) {
     let image = document.createElement("img");
-    image.src = images[i];
+    image.src = item;
     image.classList.add("popup__photo");
     image.width = 45;
     image.height = 40;
@@ -230,8 +233,8 @@ function createCard(cardTemplates) {
 function activeMap(map, form, fildsets) {
   map.classList.remove("map--faded");
   form.classList.remove("ad-form--disabled");
-  for (let i of fildsets) {
-    i.removeAttribute("disabled");
+  for (let fildset of fildsets) {
+    fildset.removeAttribute("disabled");
   }
 }
 
@@ -239,99 +242,82 @@ function showAddress(address) {
   address.value = "0, 0";
 }
 
-function showCard() {
+let templates = generateTemplates();
+
+function showCardHandler(evt) {
+  let pinPosition = evt.target;
+  if (evt.target.tagName == "IMG") {
+    pinPosition = evt.target.parentNode;
+  }
+  let pinPositionX = pinPosition.style.left;
+  let pinPositionY = pinPosition.style.top;
+  let card = document.querySelector("article");
+  card.innerHTML = "";
+  let template = findCardByPosition(pinPositionX, pinPositionY);
+  createCard(template);
+}
+
+function subscribePinsOnClick() {
   const btnMapPins = document.querySelectorAll(".map__pin:not(.map__pin--main)");
-  for (let i = 0; i < templates.length; i++) {
-    btnMapPins[i].addEventListener("click", function (evt) {
-      let pinPosition = evt.target;
-      if (evt.target.tagName == "IMG") {
-        pinPosition = evt.target.parentNode;
-      }
-      let pinPositionX = pinPosition.style.left;
-      let pinPositionY = pinPosition.style.top;
-      for (let j = 0; j < templates.length; j++) {
-        let tempХ = `${templates[j].location.x}px`;
-        let tempY = `${templates[j].location.y}px`;
-        if (tempХ == pinPositionX && tempY == pinPositionY) {
-          let card = document.querySelector("article");
-          card.innerHTML = "";
-          createCard(templates[j]);
-          break;
-        }
-      }
-    });
+  for (let btnMapPin of btnMapPins) {
+    btnMapPin.addEventListener("click", showCardHandler);
   }
 }
 
-let templates = generateTemplates();
-mapPinMain.addEventListener("mouseup", function () {
-  activeMap(map, form, fildsets);
-  showAddress(address);
-  createPin(templates);
-  createCard(templates[0]);
-  showCard();
-
-});
-
-const rooms = document.querySelector("#room_number");
-const capacityGuests = document.querySelector("#capacity");
-console.log(rooms);
-console.log(capacityGuests);
-
-function disabledInput(capacityGuests) {
-  capacityGuests.setAttribute("disabled", "true");
+function findCardByPosition(x, y) {
+  for (let template of templates) {
+    let tempХ = `${template.location.x}px`;
+    let tempY = `${template.location.y}px`;
+    if (tempХ == x && tempY == y) {
+      return template;
+    }
+  }
 }
 
-disabledInput(capacityGuests);
-let selectOption = document.querySelector("#room_number option:checked");
-console.log(selectOption);
-rooms.addEventListener("change", function () {
-  let selectOption = rooms.querySelector("option:checked");
-  fillOptionOnCapacityGuests(selectOption, capacityGuests);
-});
+  mapPinMain.addEventListener("mouseup", function () {
+    activeMap(map, form, fildsets);
+    showAddress(address);
+    createPin(templates);
+    createCard(templates[0]);
+    subscribePinsOnClick();
+  });
 
+  function disableInput(capacityGuests) {
+    capacityGuests.setAttribute("disabled", "true");
+  }
+
+  rooms.addEventListener("change", function () {
+    let checkedOption = rooms.querySelector("#room_number option:checked");
+    fillOptionOnCapacityGuests(checkedOption, capacityGuests);
+  });
+
+function fillOptionValue(capacityGuests, value, text) {
+  let option = document.createElement("option");
+  option.value = value;
+  option.textContent = text;
+  capacityGuests.append(option);
+}
 
 function fillOptionOnCapacityGuests(selectOption, capacityGuests) {
-  capacityGuests.removeAttribute("disabled");
-  let roomsValue = selectOption.value;
-  console.log(selectOption.value);
-  capacityGuests.innerHTML = "";
-  if (roomsValue == 1) {
-    let option = document.createElement("option");
-    option.value = "1";
-    option.textContent = "для 1 гостя";
-    capacityGuests.append(option);
+    capacityGuests.removeAttribute("disabled");
+    let roomsValue = selectOption.value;
+    capacityGuests.innerHTML = "";
+    if (roomsValue == 1) {
+      fillOptionValue(capacityGuests, "1", "для 1 гостя");
+    }
+    if (roomsValue == 2) {
+      fillOptionValue(capacityGuests, "1", "для 1 гостя");
+      fillOptionValue(capacityGuests, "2", "для 2 гостей");
+    }
+    if (roomsValue == 3) {
+      fillOptionValue(capacityGuests, "1", "для 1 гостя");
+      fillOptionValue(capacityGuests, "2", "для 2 гостей");
+      fillOptionValue(capacityGuests, "3", "для 3 гостей");
+    }
+    if (roomsValue == 100) {
+      fillOptionValue(capacityGuests, "100", "не для гостей");
+    }
   }
-  if (roomsValue == 2) {
-    let option = document.createElement("option");
-    option.value = "1";
-    option.textContent = "для 1 гостя";
-    capacityGuests.append(option);
-    let option2 = document.createElement("option");
-    option2.value = "2";
-    option2.textContent = "для 2 гостей";
-    capacityGuests.append(option2);
-  }
-  if (roomsValue == 3) {
-    let option = document.createElement("option");
-    option.value = "1";
-    option.textContent = "для 1 гостя";
-    capacityGuests.append(option);
-    let option2 = document.createElement("option");
-    option2.value = "2";
-    option2.textContent = "для 2 гостей";
-    capacityGuests.append(option2);
-    let option3 = document.createElement("option");
-    option3.value = "3";
-    option3.textContent = "для 3 гостей";
-    capacityGuests.append(option3);
-  }
-  if (roomsValue == 100) {
-    let option4 = document.createElement("option");
-    option4.value = "100";
-    option4.textContent = "не для гостей";
-    capacityGuests.append(option4);
-  }
-}
 
-fillOptionOnCapacityGuests(rooms.querySelector("option:checked"), capacityGuests);
+  fillOptionOnCapacityGuests(rooms.querySelector("option:checked"), capacityGuests);
+  disableInput(capacityGuests);
