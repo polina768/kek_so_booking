@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="271d81dc-8713-49b9-99e7-ade1ea47b19f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/generate-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/pin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577195161953</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Задание 3. Разделение на модули">
+      <created>1577470455562</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1577470455562</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +185,7 @@
     <MESSAGE value="Внесены исправления в задание 1" />
     <MESSAGE value="Выполнено задание 2" />
     <MESSAGE value="Исправления в задании 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправления в задании 2" />
+    <MESSAGE value="Задание 3. Разделение на модули" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 3. Разделение на модули" />
   </component>
 </project>
