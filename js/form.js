@@ -1,4 +1,3 @@
-//capacityGuests передать
 import {capacityGuests , rooms} from "./data.js";
 
 function disabledFieldset(fieldsets) {

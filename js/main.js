@@ -5,13 +5,17 @@ import {activeMap, subscribePinsOnClick} from "./map.js";
 import {createPin} from "./pin.js";
 import {createCard} from "./card.js";
 
-
 let templates = generateTemplates();
 disabledFieldset(fildsets);
-mapPinMain.addEventListener("mouseup", function () {
-  activeMap(map, form, fildsets);
-  createPin(templates);
-  createCard(templates[0]);
-  subscribePinsOnClick();
-});
+
+function activateMapHandler() {
+  return function () {
+    activeMap(map, form, fildsets);
+    createPin(templates);
+    createCard(templates[0]);
+    subscribePinsOnClick();
+  };
+}
+
+mapPinMain.addEventListener("mouseup", activateMapHandler());
 
