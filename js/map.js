@@ -10,10 +10,12 @@ function activeMap(map, form, fildsets) {
   }
 }
 
-function subscribePinsOnClick() {
+function subscribePinsOnClick(templates) {
   const btnMapPins = document.querySelectorAll(".map__pin:not(.map__pin--main)");
   for (let btnMapPin of btnMapPins) {
-    btnMapPin.addEventListener("click", showCardHandler);
+    btnMapPin.addEventListener("click", function (evt) {
+       showCardHandler(evt , templates);
+    });
   }
 }
 
@@ -53,9 +55,6 @@ mapPinMain.addEventListener("mousedown", function (evt) {
     showAddress(finishCoordTop, finishCoordLeft);
     mapPinMain.style.top = finishCoordTop + "px";
     mapPinMain.style.left = finishCoordLeft + "px";
-
-
-
   };
 
   let onMouseUp = function (upEvt) {

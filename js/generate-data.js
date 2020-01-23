@@ -101,7 +101,7 @@ function createOffer(location) {
 function createLocation() {
   let x = generateX(0, 1200);
   let y = generateY(130, 631);
-  return {x, y} // Из svg взято
+  return {x, y}
 }
 
 function createAuthor() {
