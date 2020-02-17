@@ -3,7 +3,7 @@ import {disabledFieldset} from "./form.js"
 import {activeMap, subscribePinsOnClick} from "./map.js";
 import {createPin} from "./pin.js";
 import {createCard} from "./card.js";
-import {load, upload} from "./backend.js";
+import {loadData, uploadData} from "./backend.js";
 
 let templates = undefined;
 // = generateTemplates();
@@ -17,7 +17,6 @@ function activateMapHandler() {
     subscribePinsOnClick(templates);
   };
 }
-
 mapPinMain.addEventListener("mouseup", activateMapHandler());
 
 let onError = function(message){
@@ -34,10 +33,9 @@ let onSuccessForm = function(){
   alert("Пин добавлен");
 };
 
-load("https://js.dump.academy/keksobooking/data", onSuccess, onError);
-
-let formSub = document.querySelector(".ad-form");
-formSub.addEventListener("submit", function (evt) {
+form.addEventListener("submit", function (evt) {
   evt.preventDefault();
-  upload(formSub, "https://js.dump.academy/keksobooking", onSuccessForm , onError);
+  uploadData(form, "https://js.dump.academy/keksobooking", onSuccessForm , onError);
 });
+
+loadData("https://js.dump.academy/keksobooking/data", onSuccess, onError);

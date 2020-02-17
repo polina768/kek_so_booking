@@ -68,7 +68,8 @@
       <workItem from="1579789132526" duration="682000" />
       <workItem from="1580121221337" duration="1000" />
       <workItem from="1581609158423" duration="17686000" />
-      <workItem from="1581923809960" duration="1151000" />
+      <workItem from="1581923809960" duration="1783000" />
+      <workItem from="1581937492075" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="create project template">
       <created>1575463746197</created>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579789161623</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Задание 3 fetch">
+      <created>1581925009367</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1581925009367</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +218,17 @@
     <MESSAGE value="Исправления в задании 2" />
     <MESSAGE value="Задание 3. Разделение на модули" />
     <MESSAGE value="Исправление задание 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправление задание 3" />
+    <MESSAGE value="Задание 3 fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 3 fetch" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="583" y="25" key="CommitChangelistDialog2" timestamp="1581925008961">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="25" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581925008961" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1581925018818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581925018818" />
   </component>
 </project>

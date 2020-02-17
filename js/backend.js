@@ -23,7 +23,7 @@
 //   xhr.timeout = 1000;
 //   return xhr;
 // }
-let load = function (url, onSuccess, onError) {
+let loadData = function (url, onSuccess, onError) {
   fetch(url)
     .then(data => {
       if (data.status === 200) {
@@ -43,7 +43,7 @@ let load = function (url, onSuccess, onError) {
 //   xhr.send();
 // };
 
-let upload = (formSub, url, onSuccessForm, onError) => {
+let uploadData = (formSub, url, onSuccessForm, onError) => {
   fetch(url, {
     method: 'POST',
     body: new FormData(formSub),
@@ -63,5 +63,5 @@ let upload = (formSub, url, onSuccessForm, onError) => {
 //   xhr.open("POST", url);
 //   xhr.send(data);
 // };
-export {load, upload};
+export {loadData, uploadData};
 
