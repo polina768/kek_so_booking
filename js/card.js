@@ -19,7 +19,7 @@ function createCard(cardTemplates) {
   let photoContainer = card.querySelector(".popup__photos");
   createPhotos(photoContainer, cardObj.offer.photos);
 
-  card.querySelector(".popup__avatar").src = cardObj.author.avatars;
+  card.querySelector(".popup__avatar").src = cardObj.author.avatar;
   map.append(card);
 }
 function getTypeHouse(str) {
@@ -58,7 +58,7 @@ function createFeature(featureContainer, features) {
   }
 }
 
-function showCardHandler(evt) {
+function showCardHandler(evt , templates) {
   let pinPosition = evt.target;
   if (evt.target.tagName == "IMG") {
     pinPosition = evt.target.parentNode;
@@ -67,7 +67,7 @@ function showCardHandler(evt) {
   let pinPositionY = pinPosition.style.top;
   let card = document.querySelector("article");
   card.innerHTML = "";
-  let template = findCardByPosition(pinPositionX, pinPositionY);
+  let template = findCardByPosition(pinPositionX, pinPositionY, templates);
   createCard(template);
 }
 

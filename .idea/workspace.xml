@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="271d81dc-8713-49b9-99e7-ade1ea47b19f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,24 +34,17 @@
     </option>
   </component>
   <component name="ProjectId" id="1UWDjZRiyPqc8KzfsIvC5KEwtfj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -67,6 +61,15 @@
       <workItem from="1576518792559" duration="27124000" />
       <workItem from="1576924460013" duration="9000" />
       <workItem from="1577092112035" duration="776000" />
+      <workItem from="1577693505307" duration="255000" />
+      <workItem from="1578058256355" duration="4000" />
+      <workItem from="1578128806940" duration="9936000" />
+      <workItem from="1578238992042" duration="10493000" />
+      <workItem from="1579789132526" duration="682000" />
+      <workItem from="1580121221337" duration="1000" />
+      <workItem from="1581609158423" duration="17686000" />
+      <workItem from="1581923809960" duration="1783000" />
+      <workItem from="1581937492075" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="create project template">
       <created>1575463746197</created>
@@ -159,7 +162,35 @@
       <option name="project" value="LOCAL" />
       <updated>1577470455562</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Задание 3. Разделение на модули">
+      <created>1577693532672</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577693532672</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Исправление задание 3">
+      <created>1578129431605</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1578129431605</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Исправление задание 3">
+      <created>1579789161623</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1579789161623</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Задание 3 fetch">
+      <created>1581925009367</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1581925009367</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +217,18 @@
     <MESSAGE value="Выполнено задание 2" />
     <MESSAGE value="Исправления в задании 2" />
     <MESSAGE value="Задание 3. Разделение на модули" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 3. Разделение на модули" />
+    <MESSAGE value="Исправление задание 3" />
+    <MESSAGE value="Задание 3 fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 3 fetch" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="583" y="25" key="CommitChangelistDialog2" timestamp="1581925008961">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="25" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581925008961" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1581925018818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581925018818" />
   </component>
 </project>

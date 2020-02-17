@@ -7,7 +7,7 @@ function createPin(templates) {
     let pinObj = item;
     pin.style.left = `${pinObj.location.x}px`;
     pin.style.top = `${pinObj.location.y}px`;
-    pin.firstChild.src = `${pinObj.author.avatars}`;
+    pin.firstChild.src = `${pinObj.author.avatar}`;
     pin.firstChild.alt = `${pinObj.offer.title}`;
     map_pins.append(pin);
   }
