@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="271d81dc-8713-49b9-99e7-ade1ea47b19f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/backend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/generate-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/generate-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/backend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pin.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,24 +34,17 @@
     </option>
   </component>
   <component name="ProjectId" id="1UWDjZRiyPqc8KzfsIvC5KEwtfj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -78,6 +65,10 @@
       <workItem from="1578058256355" duration="4000" />
       <workItem from="1578128806940" duration="9936000" />
       <workItem from="1578238992042" duration="10493000" />
+      <workItem from="1579789132526" duration="682000" />
+      <workItem from="1580121221337" duration="1000" />
+      <workItem from="1581609158423" duration="17686000" />
+      <workItem from="1581923809960" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="create project template">
       <created>1575463746197</created>
@@ -184,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578129431605</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Исправление задание 3">
+      <created>1579789161623</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1579789161623</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
